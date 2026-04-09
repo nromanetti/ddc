@@ -1,78 +1,63 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BVRSPQR5VW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-BVRSPQR5VW');
-</script>    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BVRSPQR5VW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-BVRSPQR5VW');
+    </script>    
     <meta charset="UTF-8">
-    <link rel="icon" href="favicon.png" type="image/png">    
-    <title>Deep Dive Consulting</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <title>Deep Dive Consulting - Subsea Telecom Expert</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            margin: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            background-color: #e6f2ff;
-            font-family: Georgia, "Times New Roman", serif;
-            color: #0a2540;
+        /* Exactement le même style pour la cohérence */
+        :root { --dark-blue: #002d62; --light-blue: #70a1d7; --white: #ffffff; }
+        body, html { margin: 0; padding: 0; font-family: 'Montserrat', sans-serif; color: var(--white); height: 100%; }
+        .hero {
+            background: linear-gradient(rgba(0, 45, 98, 0.7), rgba(0, 45, 98, 0.7)), 
+                        url('fond-ecran-cable-subsea.png') no-repeat center center/cover;
+            min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center;
+            text-align: center; padding: 40px 20px; box-sizing: border-box;
         }
-
-        .container {
-            text-align: center;
+        .lang-switch { position: absolute; top: 20px; right: 20px; }
+        .lang-btn {
+            text-decoration: none; color: white; border: 1px solid rgba(255,255,255,0.5);
+            padding: 8px 16px; border-radius: 20px; background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(5px); font-size: 0.9rem; display: flex; align-items: center; gap: 8px; transition: all 0.3s ease;
         }
-
-        h1 {
-            margin: 0;
-            font-size: 52px;
-            font-weight: normal;
-            letter-spacing: 1px;
-        }
-
-        h2 {
-            margin-top: 10px;
-            font-size: 36px;
-            font-weight: normal;
-            letter-spacing: 4px;
-        }
-
-        .contact {
-            margin-top: 25px;
-            font-size: 24px;
-            letter-spacing: 2px;
-        }
-
-        .contact a {
-            text-decoration: none;
-            color: #0a2540;
-            border-bottom: 1px solid transparent;
-        }
-
-        .contact a:hover {
-            border-bottom: 1px solid #0a2540;
-        }
+        .lang-btn:hover { background: rgba(255,255,255,0.2); border-color: var(--light-blue); transform: translateY(-2px); }
+        .logo { max-width: 300px; margin-bottom: 30px; background: rgba(255, 255, 255, 0.9); padding: 15px; border-radius: 8px; }
+        h1 { font-size: 2.0rem; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 2px; }
+        .tagline { font-size: 1.1rem; max-width: 1000px; margin-bottom: 30px; line-height: 1.4; }
+        .expertise-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; max-width: 1000px; margin-bottom: 50px; width: 100%; }
+        .card { background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(5px); padding: 20px; border-left: 4px solid var(--light-blue); border-radius: 4px; text-align: left; }
+        .card h3 { margin-top: 0; color: var(--light-blue); }
+        .cta-button { background-color: var(--light-blue); color: var(--dark-blue); padding: 15px 40px; text-decoration: none; font-weight: bold; border-radius: 50px; transition: 0.3s; text-transform: uppercase; }
+        .cta-button:hover { background-color: var(--white); transform: scale(1.05); }
     </style>
 </head>
-
 <body>
-    <div class="container">
-        <h1>Deep Dive Consulting</h1>
-        <h2>Subsea</h2>
-
-        <div class="contact">
-            <a href="https://www.linkedin.com/in/carine-romanetti/" id="linkedin-link">
-                Contact
-            </a>
-        </div>
+    <div class="lang-switch">
+        <a href="fr.html" class="lang-btn"><span>🇫🇷</span> FR</a>
     </div>
+    <section class="hero">
+        <img src="logoDDC.png" alt="Deep Dive Consulting Logo" class="logo">
+        <h1>Subsea Telecom Cable Expertise</h1>
+        <p class="tagline">Deep Dive Consulting Subsea supports operators, public stakeholders, and investors in the successful delivery of submarine telecom infrastructure projects, notably through owner’s engineering services, technical due diligence, and project structuring.<br/><br/>
+
+        Drawing on extensive experience across the full lifecycle of subsea telecom cable systems, the company adopts an integrated approach that seamlessly combines technical excellence, economic insight, and contractual expertise.</p>
+        <div class="expertise-grid">
+            <div class="card"><h3>Owner's Engineer</h3><p>Lifecycle support: design, procurement, deployment oversight, and training.</p></div>
+            <div class="card"><h3>Due Diligence</h3><p>Technical and strategic assessment to secure your infrastructure investments.</p></div>
+            <div class="card"><h3>Governance</h3><p>Consortia setup, governance models, and international partnership negotiations.</p></div>
+        </div>
+        <a href="mailto:info@deepdiveconsulting.com" class="cta-button">Get in touch</a>
+    </section>
 </body>
 </html>
